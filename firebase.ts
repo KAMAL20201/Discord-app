@@ -6,12 +6,11 @@ import { initializeApp } from "firebase/app";
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
-  // apiKey: "AIzaSyB9tsFVr_1w1xjddxFEwPsoA0le-UQiG_I",
   authDomain: "discord-clone-f8a4c.firebaseapp.com",
   projectId: "discord-clone-f8a4c",
   storageBucket: "discord-clone-f8a4c.appspot.com",
   messagingSenderId: "1093249869786",
-  appId: "1:1093249869786:web:4aa96f57a57aa4d545c2e3",
+  appId: process.env.FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
